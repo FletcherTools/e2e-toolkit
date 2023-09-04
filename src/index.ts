@@ -5,8 +5,6 @@ import { urlMatcherHelper } from './outer/url-matcher.helper';
 import { parseCustomQuery } from './outer/parse-custom-query.helper';
 
 export interface E2EHelpersConfig {
-    customSelectorAttr?: string
-    customSelectorParamAttrPrefix?: string
     customSelectorPrefix?: string
     pseudoSelectorPrefix?: string
     pseudoSelectorMap?: Record<string, string>
@@ -14,8 +12,6 @@ export interface E2EHelpersConfig {
 
 export function e2eHelpersFactory(config: E2EHelpersConfig) {
     const mergedCtx: HelperContext = extendConfig(defaultHelperContext, {
-        customSelectorAttr: config.customSelectorAttr,
-        customSelectorParamAttrPrefix: config.customSelectorParamAttrPrefix,
         customSelectorPrefix: config.customSelectorPrefix,
         pseudoSelectorPrefix: config.pseudoSelectorPrefix,
         pseudoSelectorMap: config.pseudoSelectorMap

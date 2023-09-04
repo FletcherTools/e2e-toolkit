@@ -3,7 +3,6 @@ We provide some syntax sugar for selectors with `q` helper.
 This helper allows you to use shortcuts for `data-test-*` attributes
 and provides a set of pseudo-selectors that abstracts some common-used but nasty selectors.
 
-
 ### `q` Helper
 `q` helper has just one goal:
 it recieves a pretty css-query with syntax sugar and returns a native css-query.
@@ -33,7 +32,7 @@ q`%%agGrid=orders%(status=loaded)`
 ```
 
 ### Pseudo Selectors `%%`
-In case you need to interact with third-party components that we cannot tag by `[data-test-id]` you can use these pseudo-selectors to reach elements.
+In case you need to interact with **third-party components that we cannot tag** by `[data-test-id]` you can use these pseudo-selectors to reach elements.
 
 Example:
 ```ts

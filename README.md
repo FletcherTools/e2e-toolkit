@@ -1,21 +1,26 @@
-# E2E Helpers
+# E2EToolkit
 
-To make the process for writing e2e-tests less tricky and more comfortable
+![Code Sample](./docs/images/code-sample.png)
+
+E2EToolkit is a set of tools that aims to make the process for writing e2e-tests less tricky and more comfortable
 we have prepared a set of tools that will help you to focus on testing scenarios.
 
+> Why and how to use [Test Attributes](docs/TestAttributes.md)
+
+Tools:
 - [Q Helper](docs/QHelper.md) // Provides shortcuts for css-queries
 - [R Helper](docs/RHelper.md) // Provides shortcuts for url-patterns
+- [Element Lookup Assistant](https://github.com/FletcherTools/e2e-toolkit-ela) // Helps to figure out element's test-id without digging into the elements' tree.
 
 ## Helpers
-
 ### Initialization
 ```ts
-import { e2eHelpersFactory } from 'e2e-helpers';
+import { e2eHelpersFactory } from 'e2e-toolkit';
 export const { q, r } = e2eHelpersFactory(/* Config */);
 ```
 or
 ```ts
-import { e2eHelpersFactory } from 'e2e-helpers';
+import { e2eHelpersFactory } from 'e2e-toolkit';
 const { q, r } = e2eHelpersFactory(/* Config */);
 
 global.q = q;
@@ -26,8 +31,6 @@ global.r = r;
 #### Default config
 ```ts
 const config = {
-    customSelectorAttr: 'data-test-id',
-    customSelectorParamAttrPrefix: 'data-test-',
     customSelectorPrefix: '%',
     pseudoSelectorPrefix: '%%',
     pseudoSelectorMap: {},
@@ -35,10 +38,11 @@ const config = {
 ```
 ```ts
 interface E2EHelpersConfig {
-    customSelectorAttr: string
-    customSelectorParamAttrPrefix: string
     customSelectorPrefix: string
     pseudoSelectorPrefix: string
     pseudoSelectorMap: Record<string, string>
 }
 ```
+
+## Related resources
+- [Cypress](https://github.com/cypress-io/cypress) // a next generation front end testing tool built for the modern web

@@ -1,5 +1,5 @@
 {
-  "name": "e2e-helpers",
+  "name": "e2e-toolkit",
   "version": "0.0.1",
   "description": "A set of tools for seamless e2e-tests writing experience",
   "source": "src/index.ts",
