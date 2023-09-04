@@ -2,8 +2,8 @@
 
 ![Code Sample](./docs/images/code-sample.png)
 
-E2EToolkit is a set of tools that aims to make the process for writing e2e-tests less tricky and more comfortable
-we have prepared a set of tools that will help you to focus on testing scenarios.
+E2EToolkit is a set of tools that aims to make the process for writing e2e-tests 
+less tricky and more comfortable, so you can focus on testing scenarios.
 
 > Why and how to use [Test Attributes](docs/TestAttributes.md)
 
