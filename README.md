@@ -30,17 +30,16 @@ global.r = r;
 ### Configuration
 #### Default config
 ```ts
-const config = {
-    customSelectorPrefix: '%',
-    pseudoSelectorPrefix: '%%',
-    pseudoSelectorMap: {},
-}
-```
-```ts
 interface E2EHelpersConfig {
     customSelectorPrefix: string
     pseudoSelectorPrefix: string
     pseudoSelectorMap: Record<string, string>
+}
+
+const config: E2EHelpersConfig = {
+    customSelectorPrefix: '%',
+    pseudoSelectorPrefix: '%%',
+    pseudoSelectorMap: {},
 }
 ```
 
