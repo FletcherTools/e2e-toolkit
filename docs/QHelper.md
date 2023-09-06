@@ -36,6 +36,13 @@ In case you need to interact with **third-party components** that **cannot be ta
 
 Example:
 ```ts
-  cy.$get(q`%%agGrid=orders %%agGrid-filtersColumn:nth-child(1) input`).type(123)
+const { q, r } = e2eHelpersFactory({
+  pseudoSelectorMap: {
+    'agGrid': '.ag-grid',
+    'agGrid-filtersColumn': '[ref="eHeaderViewport"] .ag-header-row-floating-filter .ag-header-cell',
+  }
+});
+
+cy.$get(q`%%agGrid=orders %%agGrid-filtersColumn:nth-child(1) input`).type(123)
 ```
 
