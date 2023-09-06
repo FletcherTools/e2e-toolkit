@@ -32,7 +32,7 @@ q`%%agGrid=orders%(status=loaded)`
 ```
 
 ### Pseudo Selectors `%%`
-In case you need to interact with **third-party components that we cannot tag** by `[data-test-id]` you can use these pseudo-selectors to reach elements.
+In case you need to interact with **third-party components** that **cannot be tagged by `[data-test-id]`** you can use pseudo-selectors to reach elements.
 
 Example:
 ```ts
