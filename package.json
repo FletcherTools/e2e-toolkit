@@ -1,6 +1,6 @@
 {
-  "name": "e2e-toolkit",
-  "version": "0.0.1",
+  "name": "@fletchers-tools/e2e-toolkit",
+  "version": "1.0.1",
   "description": "A set of tools for seamless e2e-tests writing experience",
   "source": "src/index.ts",
   "main": "dist/main.js",
@@ -11,6 +11,7 @@
     "doc": "docs"
   },
   "dependencies": {
+    "husky": "^9.1.7",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
@@ -22,16 +23,21 @@
   "scripts": {
     "build": "parcel build",
     "cypress:open": "npx cypress open --e2e --browser electron --config-file cypress/config.ts",
-    "cypress:run": "npx cypress run --config-file cypress/config.ts"
+    "cypress:run": "npx cypress run --config-file cypress/config.ts",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FletcherTools/e2e-helpers.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Fletcher Lind",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FletcherTools/e2e-helpers/issues"
   },
-  "homepage": "https://github.com/FletcherTools/e2e-helpers#readme"
+  "homepage": "https://github.com/FletcherTools/e2e-helpers#readme",
+  "keywords": [
+    "e2e",
+    "test"
+  ]
 }

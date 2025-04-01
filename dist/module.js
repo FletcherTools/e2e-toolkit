@@ -100,8 +100,6 @@ function $03e04040a8c30432$export$c24a07e0eea944dc(rawQuery) {
 
 function $149c1bd638913645$export$fa61821cd4e1a50e(config) {
     const mergedCtx = (0, $672b1d26538218f6$export$c1fdfb880e73617c)((0, $5321696df4239910$export$ccfa95e9c29e6e31), {
-        customSelectorAttr: config.customSelectorAttr,
-        customSelectorParamAttrPrefix: config.customSelectorParamAttrPrefix,
         customSelectorPrefix: config.customSelectorPrefix,
         pseudoSelectorPrefix: config.pseudoSelectorPrefix,
         pseudoSelectorMap: config.pseudoSelectorMap

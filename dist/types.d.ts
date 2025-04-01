@@ -1,6 +1,4 @@
 export interface E2EHelpersConfig {
-    customSelectorAttr?: string;
-    customSelectorParamAttrPrefix?: string;
     customSelectorPrefix?: string;
     pseudoSelectorPrefix?: string;
     pseudoSelectorMap?: Record<string, string>;
